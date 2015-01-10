@@ -1,3 +1,52 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 2.5em;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
 body {
     /* Typography Declarations */
     color:white;
@@ -6,36 +55,11 @@ body {
     background:url(http://arisegaming.files.wordpress.com/2013/05/website-background-2-1.jpg) ;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-  }
+      }
 
-.content-footer,
-.masthead-heading,
-.masthead-intro {
+.content-footer {
    text-align: center;
 }
-
-
-
-.masthead-intro {
-    /* Layout Declarations */
-    margin-bottom: 0.1em;
-    /* Typography Declarations */
-    font-family: "Roboto Slab", Georgia, serif;
-    font-size: 2em;
-}
-
-.masthead-heading {
-    /* Layout Declarations */
-    margin-top: -0.2em;
-    /* Typography Declarations */
-    font-family: "Roboto Slab", "Helvetica Neue", sans-serif;
-    font-weight: bold;
-    font-size: 6em;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: #1E1001;
-   }
-
 
 .introduction-section,
 .location-section,
@@ -46,7 +70,6 @@ body {
     margin-top: 2em;
 }
 
-
 .social > li {
     display: inline-block;
     font-weight: 300;
@@ -55,44 +78,39 @@ body {
 .introduction-section > p,
 .location-section > p,
 .content-footer > p {
-    /* Typography Declarations */
     font-weight: 300;
     letter-spacing: 0.05em;
+      color:white;
+
     }
 
-.questions-section > h2 {
+.questions-section h1 {
+  font-size: 2em;
+
+}
+
+.questions-section h2 {
     font-family: "Cursive", Georgia, serif;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
-    /* Layout */
-    margin: 2em 0 1em 0;
     color:black;
 }
 
-section > h1 {
-    margin-top: 2em;
+.introduction-section, .location-section, .questions-section  {
+
 }
 
-/*.content-footer {
-  /* Red, Green, Blue: #RRGGBB
-    background-color: #090202;
-    clear:both;
-    margin-top:10em;
-    margin-bottom:7em;
-    max-width: 38em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;*/
+.introduction-section > h1 {
+  font-size: 2em;
 
-  }
+}
 
-.introduction-section, .location-section, .questions-section  {
-    border: px solid #BADA55;
-    padding: 1em;
+.location-section > h1 {
+  font-size: 2em;
 }
 
 .questions-section {
-    margin-top: -0.8em;
+  margin-top: 3em;
 
 }
 
@@ -120,20 +138,17 @@ section > h1 {
   }
 
 .photo {
-    margin-top:3em;
-    margin-bottom:3.5em;
     border-radius:4.4em;
     max-width:10em;
     border: 0.2em solid orange;
-  
-}
+    margin-top: 8em;
+   }
 
 .navigation-section > li {
     display:inline-block;
     font-size:1.4em;
     font-family:'Leckerli one';
     float:right;
-    margin:1em 1em 0em 1em;
     color: white;
     
     }
@@ -145,9 +160,10 @@ section > h1 {
 
 .h1-projects {
     text-align:center;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     color:orange;
     font-size:2.3em;
+    margin-top: 3em;
 }
 
 .projects-section, .project-p {
@@ -166,6 +182,7 @@ section > h1 {
   height: auto; 
   overflow: hidden;
   border-radius: 2em;
+  display: inline-block;
 }
 
 .navigation-section a {
@@ -180,33 +197,32 @@ section > h1 {
   color: #ffa500;
   text-decoration:none;
   float:right;
-  border-top:3em solid black;
-  margin-right: 1em;
 }
 
 .nav-content {
     background-color: black;
-    position: fixed;
     width: 100%;
     z-index: 9999;
-    border-bottom: 0.3em solid black;
-    border-top: 0.3em solid black;
-    margin-top: -6em;
-    height: 17%;    
-}
+    position: fixed;
+    margin-top: -2em;
+   }
 
-.portfolio,
-.contact {
-  margin-top: 1em;
+.portfolio {
   font-family: cursive;
   color: white;
+    margin-right: 2em;
+
+    }
+
+.contact {
+  font-family: cursive;
+  color: white;
+  margin-right: 2em;
     }
 
 
 .name {
-  margin-top: 3.9em;
   color:orange;
-  margin-left: 2em;
 }
 
 h1 {
@@ -216,9 +232,9 @@ h1 {
 .content-footer {
   background:url(http://judaliyoga.com/images/layout/background-footer.gif);
   margin:0 auto;
-  background-size: 100% 100%;
+  background-size: 100% 90%;
   background-repeat: no-repeat;
-  margin-bottom: 8em;
+  margin-bottom: 5em;
  }
 
  .social > li a {
