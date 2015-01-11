@@ -103,10 +103,7 @@ section > h1 {
     .masthead-heading {
         font-size: 2em;
     }
-    .nav-content h3   {
-    display:none;
-    }
-     }
+         }
 
 @media only screen and (max-width: 979px) {
   .content-footer {
@@ -114,13 +111,11 @@ section > h1 {
   }
 }
 
-@media only screen and (max-width: 979px) {
-   img {
-    max-width: 100%;
-    height: auto;
+@media only screen and (max-width: 633px) {
+.nav-content h3   {
+    display:none;
     }
-    
-  }
+}
 
 .photo {
   
