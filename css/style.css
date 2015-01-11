@@ -258,4 +258,7 @@ padding-bottom: 2em;
 .nav-content h3   {
     display:none;
     }
+.project-content div img {
+   width: 10em;
+}
 }
